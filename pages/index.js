@@ -2,6 +2,8 @@ import React from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import axios from "axios";
+import Image from 'next/image'
+
 export default function Home({ clientList }) {
   return (
     <div>
@@ -24,9 +26,9 @@ export default function Home({ clientList }) {
           </div>
           <nav className="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
             <a className="px-4 py-2 mt-2 md:mt-0 md:ml-4 hover:font-semibold focus:outline-none focus:shadow-outline"
-              href="https://github.com/lutfiharidha" target="_blank">Github</a>
+              href="https://github.com/lutfiharidha" target="_blank" rel="noreferrer">Github</a>
             <a className="px-4 py-2 mt-2 md:mt-0 md:ml-4 hover:font-semibold focus:outline-none focus:shadow-outline"
-              href="https://www.linkedin.com/in/lutfiharidha/" target="_blank">LinkedIn</a>
+              href="https://www.linkedin.com/in/lutfiharidha/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a className="px-4 py-2 mt-2 md:mt-0 md:ml-4 scroll-smooth hover:font-semibold focus:outline-none focus:shadow-outline"
               href="#about">About</a>
             <a className="px-4 py-2 mt-2 md:mt-0 md:ml-4 hover:font-semibold focus:outline-none focus:shadow-outline"
@@ -39,7 +41,7 @@ export default function Home({ clientList }) {
 
       <div className="lg:h-screen lg:py-10 lg:px-40 grid lg:grid-cols-3 md:grid-cols-2 md:place-items-center">
         <div className="lg:pt-10 lg:col-span-1 p-4">
-          <img className="rounded-lg" src="https://lutfi.dev/assets/img/lutfi.jpg" alt="" srcSet="" />
+          <Image className="rounded-lg" src="https://lutfi.dev/assets/img/lutfi.jpg" alt="" srcSet="" />
         </div>
         <div className="lg:ml-10 lg:py-32 p-4 lg:col-span-2">
           <h1 className="text-4xl lg:text-8xl">Hi there.</h1>
@@ -95,18 +97,18 @@ export default function Home({ clientList }) {
       </div>
       <div className="lg:py-6 lg:px-40">
         <div className="md:grid overflow-hidden md:grid-cols-4 p-10 md:grid-rows-2 gap-4 place-items-center m-auto">
-          <div className="md:row-span-2 md:col-span-2 transition hover:-translate-y-1 hover:scale-110 rounded-xl"><img className="rounded-xl" src="https://global-uploads.webflow.com/5f16d69f1760cdba99c3ce6e/5faa6fd9acf77395069ca442_mLLt3yhA4MokLjW9Z-lH_Z64a5VBY8ePdWsIfXC7kexpiHuhnTAp50DI09PgywDsVe_7jGwv4G1iLQ0iZdM5ZuraXxZTE99plA7cfl5TOQXp2cCndmlqTFPejC-QrLVDT8alEZPF.png" alt="" /></div>
+          <div className="md:row-span-2 md:col-span-2 transition hover:-translate-y-1 hover:scale-110 rounded-xl"><Image className="rounded-xl" src="https://global-uploads.webflow.com/5f16d69f1760cdba99c3ce6e/5faa6fd9acf77395069ca442_mLLt3yhA4MokLjW9Z-lH_Z64a5VBY8ePdWsIfXC7kexpiHuhnTAp50DI09PgywDsVe_7jGwv4G1iLQ0iZdM5ZuraXxZTE99plA7cfl5TOQXp2cCndmlqTFPejC-QrLVDT8alEZPF.png" alt="" /></div>
           <div className="md:col-start-3 md:col-span-0 transition hover:-translate-y-1 hover:scale-110">
-            <img className="rounded-xl" src="https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg" alt="" />
+            <Image className="rounded-xl" src="https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg" alt="" />
           </div>
           <div className="md:col-start-3 md:col-span-0 transition hover:-translate-y-1 hover:scale-110">
-            <img className="rounded-xl" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg" alt="" />
+            <Image className="rounded-xl" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg" alt="" />
           </div>
           <div className="md:row-start-1 md:col-start-4 transition hover:-translate-y-1 hover:scale-110">
-            <img className="rounded-xl" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg" alt="" />
+            <Image className="rounded-xl" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg" alt="" />
           </div>
           <div className="md:col-start-4 transition hover:-translate-y-1 hover:scale-110 hover:w-full">
-            <img className="rounded-xl" src="https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg" alt="" />
+            <Image className="rounded-xl" src="https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg" alt="" />
           </div>
         </div>
       </div>
@@ -123,9 +125,9 @@ export default function Home({ clientList }) {
                     <div className="flex">
                       <div className="mt-14 md:flex">
                         <div className="relative md:w-1/2 sm:w-96 xl:h-96">
-                          <img src={`http://lutfi.dev:9000/image/client/${client.client_image}`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
+                          <Image src={`http://lutfi.dev:9000/image/client/${client.client_image}`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
                           <div className="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full">
-                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg" alt="commas" />
+                            <Image src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg" alt="commas" />
                           </div>
                         </div>
                         <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between ">
@@ -145,11 +147,11 @@ export default function Home({ clientList }) {
             </Slider>
             <div className={`flex items-center mt-8 absolute`}>
               <ButtonBack className="cursor-pointer " role="button" aria-label="previous slide">
-                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonal-svg2.svg" alt="previous" />
+                <Image src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonal-svg2.svg" alt="previous" />
               </ButtonBack>
 
               <ButtonNext role="button" aria-label="next slide" className="cursor-pointer ml-2">
-                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg3.svg" alt="next" />
+                <Image src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg3.svg" alt="next" />
               </ButtonNext>
             </div>
           </CarouselProvider>
@@ -194,11 +196,11 @@ export default function Home({ clientList }) {
         className="w-full shadow-[0px_20px_25px_20px_rgba(0,0,0,0.1)] md:rounded-t-xl rounded-t-xl fixed z-40 bottom-0 bg-white">
         <div
           className="p-4 text-center max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 grid grid-cols-5 gap-5 md:hidden">
-          <a href="https://github.com/lutfiharidha" target="_blank">
+          <a href="https://github.com/lutfiharidha" target="_blank" rel="noreferrer">
             <svg className="h-7 w-7 mx-auto text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>
           </a>
 
-          <a href="https://www.linkedin.com/in/lutfiharidha/" target="_blank">
+          <a href="https://www.linkedin.com/in/lutfiharidha/" target="_blank" rel="noreferrer">
             <svg className="h-7 w-7 mx-auto text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
           </a>
 
