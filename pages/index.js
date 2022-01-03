@@ -188,7 +188,7 @@ export default function Home({ clientList }) {
       </div>
 
       <div className="lg:pt-14 pt-14 p-4 pb-4 lg:py-6 lg:px-14">
-        <p className="text-center font-semibold text-lg">&copy; 2021 Lutfi
+        <p className="text-center font-semibold text-lg">© 2021 Lutfi
           Haridha</p>
       </div>
 
