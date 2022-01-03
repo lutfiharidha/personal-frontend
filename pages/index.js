@@ -58,7 +58,7 @@ export default function Home({ clientList }) {
           <p className="pt-8 md:tracking-wider md:leading-loose w-full font-light text-lg">
             I am a Back End Developer who has experience in making several projects and internships at a
             software house company in Bandung, and now I work in an IT company that develops ERP applications in
-            Jakarta as a Backend Developer. I'm also a fast learner and fuelled by a passion to learn new
+            Jakarta as a Backend Developer. I&apos;m also a fast learner and fuelled by a passion to learn new
             technologies.
           </p>
         </div>
