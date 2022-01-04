@@ -127,7 +127,7 @@ export default function Home({ clientList }) {
                     <div className="flex">
                       <div className="mt-14 md:flex">
                         <div className="relative md:w-1/2 sm:w-96 xl:h-96">
-                          <img src={`http://api.lutfi.dev:9000/image/client/${client.client_image}`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
+                          <img src={`${client.client_image}`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
                           <div className="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full">
                             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg" alt="commas" />
                           </div>
