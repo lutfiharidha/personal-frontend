@@ -41,7 +41,7 @@ export default function Home({ clientList }) {
 
       <div className="lg:h-screen lg:py-10 lg:px-40 grid lg:grid-cols-3 md:grid-cols-2 md:place-items-center">
         <div className="lg:pt-10 lg:col-span-1 p-4">
-          <img className="rounded-lg" src="https://i.pinimg.com/736x/18/87/b3/1887b3bfce6d4dba925cfb1a55e78ee1.jpg" alt="" srcSet="" />
+          <img className="rounded-lg" src="lutfi.jpg" alt="" srcSet="" />
         </div>
         <div className="lg:ml-10 lg:py-32 p-4 lg:col-span-2">
           <h1 className="text-4xl lg:text-8xl">Hi there.</h1>
@@ -127,7 +127,7 @@ export default function Home({ clientList }) {
                     <div className="flex">
                       <div className="mt-14 md:flex">
                         <div className="relative md:w-1/2 sm:w-96 xl:h-96">
-                          <img src={`http://lutfi.dev:9000/image/client/${client.client_image}`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
+                          <img src={`http://api.lutfi.dev:9000/image/client/${client.client_image}`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
                           <div className="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full">
                             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg" alt="commas" />
                           </div>
@@ -225,6 +225,6 @@ export default function Home({ clientList }) {
 }
 
 Home.getInitialProps = async () => {
-  const { data } = await axios.get('http://103.157.97.189:9000/api/v1/client');
+  const { data } = await axios.get('http://api.lutfi.dev:9000/api/v1/client');
   return { clientList: data };
 }
