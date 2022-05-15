@@ -4,7 +4,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import axios from "axios";
 import Image from 'next/image'
 
-export default function Home({ clientList }) {
+export default function Home() {
   return (
     <div>
       <div
@@ -119,32 +119,32 @@ export default function Home({ clientList }) {
         <div className="w-3/4 md:w-1/3 bg-white lg:h-full h-1/2 absolute z-0 rounded-md" />
         <div className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container z-40">
           <h1 className="pb-6 text-4xl lg:text-5xl relative">On Working <br />With Me.</h1>
-          <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={clientList.data.length}>
+          <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={0}>
             <Slider>
               {
-                clientList.data.map((client, index) => (
-                  <Slide index={client.id} key={index}>
-                    <div className="flex">
-                      <div className="mt-14 md:flex">
-                        <div className="relative md:w-1/2 sm:w-96 xl:h-96">
-                          <img src={`${client.client_image}`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
-                          <div className="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full">
-                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg" alt="commas" />
-                          </div>
+                // clientList.data.map((client, index) => (
+                <Slide>
+                  <div className="flex">
+                    <div className="mt-14 md:flex">
+                      <div className="relative md:w-1/2 sm:w-96 xl:h-96">
+                        <img src={`https://i.ibb.co/88yb225/ff7f69a0-0218-4f1e-a4e9-1aa467c7a421.jpg`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
+                        <div className="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full">
+                          <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg" alt="commas" />
                         </div>
-                        <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between ">
-                          <div>
-                            <p className="text-xl font-medium leading-8 mt-4 text-gray-600">{client.description}</p>
-                          </div>
-                          <div className="md:mt-0 mt-8">
-                            <p className="text-lg font-medium leading-4 text-gray-800">{client.client_name}</p>
-                            <p className="text-base leading-4 mt-2 mb-4 text-gray-600">{client.client_title}</p>
-                          </div>
+                      </div>
+                      <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between ">
+                        <div>
+                          <p className="text-xl font-medium leading-8 mt-4 text-gray-600">Lutfi is one of the best employees who is able to learn the flow business quickly and he is also able to learn technology that is not in his field from frontend developers to mobile developers quickly. </p>
+                        </div>
+                        <div className="md:mt-0 mt-8">
+                          <p className="text-lg font-medium leading-4 text-gray-800">Ivan Tanu</p>
+                          <p className="text-base leading-4 mt-2 mb-4 text-gray-600">CEO at PT Sempoa Prima Teknologi</p>
                         </div>
                       </div>
                     </div>
-                  </Slide>
-                ))
+                  </div>
+                </Slide>
+                // ))
               }
             </Slider>
             <div className={`flex items-center mt-8 absolute`}>
@@ -222,9 +222,4 @@ export default function Home({ clientList }) {
       </div>
     </div >
   )
-}
-
-Home.getInitialProps = async () => {
-  const { data } = await axios.get('http://api.lutfi.dev:9000/api/v1/client');
-  return { clientList: data };
 }
