@@ -123,7 +123,7 @@ export default function Home() {
             <Slider>
               {
                 // clientList.data.map((client, index) => (
-                <Slide>
+                <Slide index={0} key={index}>
                   <div className="flex">
                     <div className="mt-14 md:flex">
                       <div className="relative md:w-1/2 sm:w-96 xl:h-96">
@@ -134,7 +134,7 @@ export default function Home() {
                       </div>
                       <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between ">
                         <div>
-                          <p className="text-xl font-medium leading-8 mt-4 text-gray-600">Lutfi is one of the best employees who is able to learn the flow business quickly and he is also able to learn technology that is not in his field from frontend developers to mobile developers quickly. </p>
+                          <p className="text-xl font-medium leading-8 mt-4 text-gray-600">Lutfi is one of the best employees who is able to learn the flow business quickly, he is also able to learn technology that is not in his field from frontend developers to mobile developers quickly. </p>
                         </div>
                         <div className="md:mt-0 mt-8">
                           <p className="text-lg font-medium leading-4 text-gray-800">Ivan Tanu</p>
