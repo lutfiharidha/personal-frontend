@@ -41,7 +41,7 @@ export default function Home() {
 
       <div className="lg:h-screen lg:py-10 lg:px-40 grid lg:grid-cols-3 md:grid-cols-2 md:place-items-center">
         <div className="lg:pt-10 lg:col-span-1 p-4">
-          <img className="rounded-lg" src="lutfi.jpg" alt="" srcSet="" />
+          <img className="rounded-lg" src={`lutfi.jpg`} alt="" srcSet="" />
         </div>
         <div className="lg:ml-10 lg:py-32 p-4 lg:col-span-2">
           <h1 className="text-4xl lg:text-8xl">Hi there.</h1>
@@ -98,16 +98,16 @@ export default function Home() {
             <img className="rounded-xl" src="https://global-uploads.webflow.com/5f16d69f1760cdba99c3ce6e/5faa6fd9acf77395069ca442_mLLt3yhA4MokLjW9Z-lH_Z64a5VBY8ePdWsIfXC7kexpiHuhnTAp50DI09PgywDsVe_7jGwv4G1iLQ0iZdM5ZuraXxZTE99plA7cfl5TOQXp2cCndmlqTFPejC-QrLVDT8alEZPF.png" alt="" />
           </div>
           <div className="md:col-start-3 md:col-span-0 transition hover:-translate-y-1 hover:scale-110">
-            <img className="rounded-xl" src="https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg" alt="" />
+            <img className="rounded-xl" src={`https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg`} alt="" />
           </div>
           <div className="md:col-start-3 md:col-span-0 transition hover:-translate-y-1 hover:scale-110">
-            <img className="rounded-xl" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg" alt="" />
+            <img className="rounded-xl" src={`https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg`} alt="" />
           </div>
           <div className="md:row-start-1 md:col-start-4 transition hover:-translate-y-1 hover:scale-110">
-            <img className="rounded-xl" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg" alt="" />
+            <img className="rounded-xl" src={`https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg`} alt="" />
           </div>
           <div className="md:col-start-4 transition hover:-translate-y-1 hover:scale-110 hover:w-full">
-            <img className="rounded-xl" src="https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg" alt="" />
+            <img className="rounded-xl" src={`https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg`} alt="" />
           </div>
         </div>
       </div>
@@ -126,10 +126,10 @@ export default function Home() {
                       <div className="relative md:w-1/2 sm:w-96 xl:h-96">
                         <img src={`https://i.ibb.co/88yb225/ff7f69a0-0218-4f1e-a4e9-1aa467c7a421.jpg`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
                         <div className="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full">
-                          <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg" alt="commas" />
+                          <img src={`https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg`} alt="commas" />
                         </div>
                       </div>
-                      <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between ">
+                      <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between">
                         <div>
                           <p className="text-xl font-medium leading-8 mt-4 text-gray-600">Lutfi is one of the best employees who is able to learn the flow business quickly, he is also able to learn technology that is not in his field from frontend developers to mobile developers quickly. </p>
                         </div>
@@ -146,11 +146,11 @@ export default function Home() {
             </Slider>
             <div className={`flex items-center mt-8 absolute`}>
               <ButtonBack className="cursor-pointer " role="button" aria-label="previous slide">
-                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonal-svg2.svg" alt="previous" />
+                <img src={`https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonal-svg2.svg`} alt="previous" />
               </ButtonBack>
 
               <ButtonNext role="button" aria-label="next slide" className="cursor-pointer ml-2">
-                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg3.svg" alt="next" />
+                <img src={`https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg3.svg`} alt="next" />
               </ButtonNext>
             </div>
           </CarouselProvider>
