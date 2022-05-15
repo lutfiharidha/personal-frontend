@@ -46,7 +46,8 @@ export default function Home() {
         <div className="lg:ml-10 lg:py-32 p-4 lg:col-span-2">
           <h1 className="text-4xl lg:text-8xl">Hi there.</h1>
           <p className="pt-4 md:tracking-wider md:leading-loose lg:w-4/5 text-xl font-light">
-            I have been a software developer for over 3 years and currently work for one of the biggest banks in Indonesia. I've worked on web-based, multi-threaded applications as well as back-end development using the newest web technologies.
+            Fuelled by a passion for designing compelling apps, I have a deep desire to excel and
+            continuously improve in my work. Learn more about my journey below.
           </p>
         </div>
       </div>
@@ -55,10 +56,7 @@ export default function Home() {
         <div className="m-auto w-full p-4">
           <h1 className="text-4xl lg:text-5xl lg:pt-5">My Career So Far.</h1>
           <p className="pt-8 md:tracking-wider md:leading-loose w-full font-light text-lg">
-            I am a Back End Developer who has experience in making several projects and internships at a
-            software house company in Bandung, and now I work in an IT company that develops ERP applications in
-            Jakarta as a Backend Developer. I&apos;m also a fast learner and fuelled by a passion to learn new
-            technologies.
+            I have been a software developer for over 3 years and currently work for one of the biggest banks in Indonesia. I've worked on web-based, multi-threaded applications as well as back-end development using the newest web technologies.
           </p>
         </div>
         <div className="p-4 lg:pt-20 space-y-2  w-full">
