@@ -46,8 +46,7 @@ export default function Home() {
         <div className="lg:ml-10 lg:py-32 p-4 lg:col-span-2">
           <h1 className="text-4xl lg:text-8xl">Hi there.</h1>
           <p className="pt-4 md:tracking-wider md:leading-loose lg:w-4/5 text-xl font-light">
-            Fuelled by a passion for designing compelling apps, I have a deep desire to excel and
-            continuously improve in my work. Learn more about my journey below.
+            I have been a software developer for over 3 years and currently work for one of the biggest banks in Indonesia. I've worked on web-based, multi-threaded applications as well as back-end development using the newest web technologies.
           </p>
         </div>
       </div>
