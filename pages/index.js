@@ -119,7 +119,7 @@ export default function Home() {
         <div className="w-3/4 md:w-1/3 bg-white lg:h-full h-1/2 absolute z-0 rounded-md" />
         <div className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container z-40">
           <h1 className="pb-6 text-4xl lg:text-5xl relative">On Working <br />With Me.</h1>
-          <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={0}>
+          <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={1}>
             <Slider>
               {
                 // clientList.data.map((client, index) => (
@@ -190,7 +190,7 @@ export default function Home() {
       </div>
 
       <div className="lg:pt-14 pt-14 p-4 pb-4 lg:py-6 lg:px-14">
-        <p className="text-center font-semibold text-lg">© 2021 Lutfi
+        <p className="text-center font-semibold text-lg">© 2022 Lutfi
           Haridha</p>
       </div>
 
