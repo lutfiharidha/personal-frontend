@@ -67,8 +67,6 @@ export default function Home() {
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
             Golang</button>
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
-            GIN</button>
-          <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
             Python</button>
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
             Fast API</button>
@@ -81,6 +79,8 @@ export default function Home() {
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
             Flutter</button>
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
+            SQL</button>
+          <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
             GIT</button>
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
             Linux</button>
@@ -89,7 +89,7 @@ export default function Home() {
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
             Docker</button>
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
-            Database</button>
+            Redis</button>
         </div>
       </div>
       <div className="lg:py-6 lg:px-40">
