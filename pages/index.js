@@ -123,7 +123,7 @@ export default function Home() {
             <Slider>
               {
                 // clientList.data.map((client, index) => (
-                <Slide index={0} key={index}>
+                <Slide index={0} key={0}>
                   <div className="flex">
                     <div className="mt-14 md:flex">
                       <div className="relative md:w-1/2 sm:w-96 xl:h-96">
