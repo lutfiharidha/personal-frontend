@@ -1,8 +1,6 @@
 import React from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import axios from "axios";
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -56,7 +54,7 @@ export default function Home() {
         <div className="m-auto w-full p-4">
           <h1 className="text-4xl lg:text-5xl lg:pt-5">My Career So Far.</h1>
           <p className="pt-8 md:tracking-wider md:leading-loose w-full font-light text-lg">
-            I have been a software developer for over 3 years and currently work for one of the biggest banks in Indonesia. I've worked on web-based, multi-threaded applications as well as back-end development using the newest web technologies.
+            I have been a software developer for over 3 years and currently work for one of the biggest banks in Indonesia.I&apos;ve worked on web-based, multi-threaded applications as well as back-end development using the newest web technologies.
           </p>
         </div>
         <div className="p-4 lg:pt-20 space-y-2  w-full">
