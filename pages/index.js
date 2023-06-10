@@ -1,7 +1,6 @@
 import React from "react";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
+import Timeline from '../components/Timeline';
 import "pure-react-carousel/dist/react-carousel.es.css";
-
 export default function Home() {
   return (
     <div>
@@ -31,8 +30,8 @@ export default function Home() {
               href="#about">About</a>
             <a className="px-4 py-2 mt-2 md:mt-0 md:ml-4 hover:font-semibold focus:outline-none focus:shadow-outline"
               href="#contact">Contact</a>
-            <a className="px-4 py-2 mt-2 bg-gray-800 text-gray-100 rounded-lg md:mt-0 hover:font-semibold focus:outline-none focus:shadow-outline"
-              href="#">Resume</a>
+            {/* <a className="px-4 py-2 mt-2 bg-gray-800 text-gray-100 rounded-lg md:mt-0 hover:font-semibold focus:outline-none focus:shadow-outline"
+              href="#">Resume</a> */}
           </nav>
         </div >
       </div >
@@ -54,7 +53,7 @@ export default function Home() {
         <div className="m-auto w-full p-4">
           <h1 className="text-4xl lg:text-5xl lg:pt-5">My Career So Far.</h1>
           <p className="pt-8 md:tracking-wider md:leading-loose w-full font-light text-lg">
-            I have been a software developer for over 3 years and currently work for one of the biggest banks in Indonesia.I&apos;ve worked on web-based, multi-threaded applications as well as back-end development using the newest web technologies.
+            I have been a software developer for over 3 years and currently working for one of the best B2B supply chain platforms in Indonesia. I&apos;ve worked on web-based, multi-threaded applications as well as back-end development using the newest web technologies.
           </p>
         </div>
         <div className="p-4 lg:pt-20 space-y-2  w-full">
@@ -66,8 +65,6 @@ export default function Home() {
             Golang</button>
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
             Python</button>
-          <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
-            Fast API</button>
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
             Javascript</button>
           <button className="rounded-md font-semibold border-solid border hover:bg-gray-200 border-gray-300 py-2 px-8  mr-2">
@@ -90,27 +87,12 @@ export default function Home() {
             Redis</button>
         </div>
       </div>
-      <div className="lg:py-6 lg:px-40">
-        <div className="md:grid overflow-hidden md:grid-cols-4 p-10 md:grid-rows-2 gap-4 place-items-center m-auto">
-          <div className="md:row-span-2 md:col-span-2 transition hover:-translate-y-1 hover:scale-110 rounded-xl">
-            <img className="rounded-xl" src="https://global-uploads.webflow.com/5f16d69f1760cdba99c3ce6e/5faa6fd9acf77395069ca442_mLLt3yhA4MokLjW9Z-lH_Z64a5VBY8ePdWsIfXC7kexpiHuhnTAp50DI09PgywDsVe_7jGwv4G1iLQ0iZdM5ZuraXxZTE99plA7cfl5TOQXp2cCndmlqTFPejC-QrLVDT8alEZPF.png" alt="" />
-          </div>
-          <div className="md:col-start-3 md:col-span-0 transition hover:-translate-y-1 hover:scale-110">
-            <img className="rounded-xl" src={`https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg`} alt="" />
-          </div>
-          <div className="md:col-start-3 md:col-span-0 transition hover:-translate-y-1 hover:scale-110">
-            <img className="rounded-xl" src={`https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg`} alt="" />
-          </div>
-          <div className="md:row-start-1 md:col-start-4 transition hover:-translate-y-1 hover:scale-110">
-            <img className="rounded-xl" src={`https://mir-s3-cdn-cf.behance.net/project_modules/1400/d0bac985516221.5d7e861fd007a.jpg`} alt="" />
-          </div>
-          <div className="md:col-start-4 transition hover:-translate-y-1 hover:scale-110 hover:w-full">
-            <img className="rounded-xl" src={`https://miro.medium.com/max/1400/0*45HvkjFB_eQEGxgi.jpeg`} alt="" />
-          </div>
-        </div>
+
+      <div className="px-4 lg:py-10">
+        <Timeline />
       </div>
 
-      <div className="pt-20 p-4 lg:py-6 lg:px-40">
+      {/* <div className="pt-20 p-4 lg:py-6 lg:px-40">
         <div className="w-3/4 md:w-1/3 bg-white lg:h-full h-1/2 absolute z-0 rounded-md" />
         <div className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container z-40">
           <h1 className="pb-6 text-4xl lg:text-5xl relative">On Working <br />With Me.</h1>
@@ -153,7 +135,7 @@ export default function Home() {
             </div>
           </CarouselProvider>
         </div>
-      </div >
+      </div > */}
       <div id="contact" className="lg:pt-32 pt-20 p-4 pb-4 lg:py-6 lg:px-40">
         <div
           className="p-4 lg:py-32 lg:px-20 ring-2 pb-14 ring-offset-4 ring-offset-gray-200 ring-gray-500 rounded-lg grid lg:grid-cols-2">
@@ -161,38 +143,37 @@ export default function Home() {
             <h1 className="lg:m-auto text-4xl lg:text-7xl lg:tracking-wide">Want to get in touch?</h1>
           </div>
 
-          <form className="grid lg:grid-cols-2 lg:gap-3">
-            <div className="pt-4 lg:grid">
-              <label className="text-slate-400 font-semibold">Name</label>
-              <input type="text" className="rounded-lg bg-white w-full py-4 px-6" placeholder="Enter your name" />
-            </div>
-            <div className="pt-4 grid">
-              <label className="text-slate-400 font-semibold">Email Address</label>
-              <input type="text" className="rounded-lg bg-white w-full py-4 px-6" placeholder="Enter your Email" />
-            </div>
+          <div className="grid">
+            <a href="mailto:me@lutfi.dev" target="_blank">
+              <div className="ml-1 pt-4 flex">
+                <div>
+                  <img src="email.png" width={50} />
+                </div>
+                <div className="ml-5 items-center flex text-2xl text-gray-600 hover:text-black">me@lutfi.dev</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/lutfiharidha/" target="_blank">
+              <div className="pt-4 flex">
+                <div>
+                  <img src="linkedin.png" width={60} />
+                </div>
+                <div className="ml-4 items-center flex text-2xl text-gray-600 hover:text-black">Lutfi Haridha</div>
+              </div>
+            </a>
+          </div>
 
-            <div className="pt-4 grid lg:col-span-2">
-              <label className="text-slate-400 font-semibold">Message</label>
-              <textarea type="text" rows="5" cols="49" className="rounded-lg bg-white w-full py-4 px-6"
-                placeholder="Enter your Message"></textarea>
-            </div>
-
-            <div className="pt-4">
-              <input className="py-3 px-6 rounded-lg bg-gray-900 text-white" type="submit" value="Submit" />
-            </div>
-          </form>
         </div>
       </div>
 
       <div className="lg:pt-14 pt-14 p-4 pb-4 lg:py-6 lg:px-14">
-        <p className="text-center font-semibold text-lg">© 2022 Lutfi
+        <p className="text-center font-semibold text-lg">© {new Date().getFullYear()} Lutfi
           Haridha</p>
       </div>
 
       <div
         className="w-full shadow-[0px_20px_25px_20px_rgba(0,0,0,0.1)] md:rounded-t-xl rounded-t-xl fixed z-40 bottom-0 bg-white">
         <div
-          className="p-4 text-center max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 grid grid-cols-5 gap-5 md:hidden">
+          className="p-4 text-center max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 grid grid-cols-4 gap-4 md:hidden">
           <a href="https://github.com/lutfiharidha" target="_blank" rel="noreferrer">
             <svg className="h-7 w-7 mx-auto text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>
           </a>
@@ -209,9 +190,9 @@ export default function Home() {
             <svg className="h-7 w-7 mx-auto text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <line x1="22" y1="2" x2="11" y2="13" />  <polygon points="22 2 15 22 11 13 2 9 22 2" /></svg>
           </a>
 
-          <a href="#">
+          {/* <a href="#">
             <svg className="h-7 w-7 mx-auto text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <polygon points="12 2 2 7 12 12 22 7 12 2" />  <polyline points="2 17 12 22 22 17" />  <polyline points="2 12 12 17 22 12" /></svg>
-          </a>
+          </a> */}
 
         </div>
       </div>
