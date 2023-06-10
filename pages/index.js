@@ -144,7 +144,7 @@ export default function Home() {
           </div>
 
           <div className="grid">
-            <a href="mailto:me@lutfi.dev" target="_blank">
+            <a href="mailto:me@lutfi.dev" target="_blank" rel="noreferrer">
               <div className="ml-1 pt-4 flex">
                 <div>
                   <img src="email.png" width={50} />
@@ -152,7 +152,7 @@ export default function Home() {
                 <div className="ml-5 items-center flex text-2xl text-gray-600 hover:text-black">me@lutfi.dev</div>
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/lutfiharidha/" target="_blank">
+            <a href="https://www.linkedin.com/in/lutfiharidha/" target="_blank" rel="noreferrer">
               <div className="pt-4 flex">
                 <div>
                   <img src="linkedin.png" width={60} />
