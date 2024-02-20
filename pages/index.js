@@ -38,7 +38,7 @@ export default function Home() {
 
       <div className="lg:h-screen lg:py-10 lg:px-40 grid lg:grid-cols-3 md:grid-cols-2 md:place-items-center">
         <div className="lg:pt-10 lg:col-span-1 p-4">
-          <img className="rounded-lg" src={`lutfi.jpg`} alt="" srcSet="" />
+          <img className="rounded-lg" src={`me.png`} alt="" srcSet="" />
         </div>
         <div className="lg:ml-10 lg:py-32 p-4 lg:col-span-2">
           <h1 className="text-4xl lg:text-8xl">Hi there.</h1>
