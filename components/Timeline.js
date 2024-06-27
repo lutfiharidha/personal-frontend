@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const Timeline = () => {
-  const [selectedExperience, setSelectedExperience] = useState(3);
+  const [selectedExperience, setSelectedExperience] = useState(4);
 
   const handleItemClick = (index) => {
     setSelectedExperience(index);
@@ -56,7 +56,7 @@ const Timeline = () => {
     },
     {
       image: 'paper.png',
-      date: 'Feb 2023 - Present',
+      date: 'Feb 2023 - Jan 2024',
       title: 'Back End Engineer',
       company: 'Paper.id',
       details: `<p>As a backend engineer at Paper.id, my main responsibility is designing and building B2B systems for invoicing, payment, and financing. I focus on creating APIs that allow businesses to integrate their financial systems with Paper.id.</p>
@@ -67,6 +67,21 @@ const Timeline = () => {
 
 <p>I am proud to be part of a team that is revolutionizing financial processes for businesses, contributing to their growth and success.This experience at Paper.id has enhanced my technical skills and allowed me to make a meaningful impact in the world of B2B financial systems.</p>`,
     },
+    {
+      image: 'indodax.png',
+      date: 'Mar 2024 - Present',
+      title: 'Software Engineer',
+      company: 'Indodax',
+      details: `<p>As a Software Engineer at Indodax, I am responsible for designing and developing secure and scalable backend solutions for the cryptocurrency trading platform. My role includes architecting system designs, developing new features, and maintaining and optimizing the performance of existing systems. I also ensure the system's security from potential cyber threats through regular code reviews and security audits.</p>
+<br>
+
+<p>Working at Indodax allows me to closely collaborate with cross-functional teams, including product, design, and operations teams, to ensure the system runs smoothly and provides an optimal user experience. Additionally, I am involved in creating comprehensive technical documentation for each development and system update, as well as preparing user guides and technical manuals.</p>
+<br>
+
+<p>
+I take pride in being part of a team that advances cryptocurrency trading technology and contributes to the growth and success of our users. My experience at Indodax has significantly enhanced my technical skills and enabled me to contribute to the development of innovative and reliable cryptocurrency trading systems. This role has given me the opportunity to make a meaningful impact in the world of cryptocurrency trading systems and continuously hone my abilities in tackling complex technological challenges.</p>
+      
+      `},
   ];
 
   return (

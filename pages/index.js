@@ -91,51 +91,6 @@ export default function Home() {
       <div className="px-4 lg:py-10">
         <Timeline />
       </div>
-
-      {/* <div className="pt-20 p-4 lg:py-6 lg:px-40">
-        <div className="w-3/4 md:w-1/3 bg-white lg:h-full h-1/2 absolute z-0 rounded-md" />
-        <div className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container z-40">
-          <h1 className="pb-6 text-4xl lg:text-5xl relative">On Working <br />With Me.</h1>
-          <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={1}>
-            <Slider>
-              {
-                // clientList.data.map((client, index) => (
-                <Slide index={0} key={0}>
-                  <div className="flex">
-                    <div className="mt-14 md:flex">
-                      <div className="relative md:w-1/2 sm:w-96 xl:h-96">
-                        <img src={`https://i.ibb.co/88yb225/ff7f69a0-0218-4f1e-a4e9-1aa467c7a421.jpg`} alt="image of profile" className="sm:m-auto w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded-md" />
-                        <div className="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-indigo-100 rounded-full">
-                          <img src={`https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg1.svg`} alt="commas" />
-                        </div>
-                      </div>
-                      <div className="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-between">
-                        <div>
-                          <p className="text-xl font-medium leading-8 mt-4 text-gray-600">Lutfi is one of the best employees who is able to learn the flow business quickly, he is also able to learn technology that is not in his field from frontend developers to mobile developers quickly. </p>
-                        </div>
-                        <div className="md:mt-0 mt-8">
-                          <p className="text-lg font-medium leading-4 text-gray-800">Ivan Tanu</p>
-                          <p className="text-base leading-4 mt-2 mb-4 text-gray-600">CEO at PT Sempoa Prima Teknologi</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Slide>
-                // ))
-              }
-            </Slider>
-            <div className={`flex items-center mt-8 absolute`}>
-              <ButtonBack className="cursor-pointer " role="button" aria-label="previous slide">
-                <img src={`https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonal-svg2.svg`} alt="previous" />
-              </ButtonBack>
-
-              <ButtonNext role="button" aria-label="next slide" className="cursor-pointer ml-2">
-                <img src={`https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg3.svg`} alt="next" />
-              </ButtonNext>
-            </div>
-          </CarouselProvider>
-        </div>
-      </div > */}
       <div id="contact" className="lg:pt-32 pt-20 p-4 pb-4 lg:py-6 lg:px-40">
         <div
           className="p-4 lg:py-32 lg:px-20 ring-2 pb-14 ring-offset-4 ring-offset-gray-200 ring-gray-500 rounded-lg grid lg:grid-cols-2">
